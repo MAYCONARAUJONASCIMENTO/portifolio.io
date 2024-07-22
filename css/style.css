@@ -1,0 +1,898 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: aliceblue;
+     
+}
+
+
+.txt-animation{
+    font-family: fantasy;
+    font-size: 45px;
+    position: absolute;
+    font-weight: 400;
+    top: 300px;
+    left: 50px;
+}
+.txt-animation span{
+    position: relative;
+}
+
+.txt-animation span::before{
+    content: "";
+    color: #3D58FF;
+    animation: palavras 30s infinite;
+}
+
+.txt-animation span::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  border-left: 2px solid #3D58FF;
+  right: -10px;
+  animation: curso .9s infinite ,  digital 30s steps(15) infinite ;
+  width: calc(100% + 15px) ;
+  background-color: black;
+}
+
+@keyframes digital {
+
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width:calc(100% + 15px) ;
+    }
+}
+
+
+@keyframes   curso {
+
+    0%{
+        border-left: 2px solid rgb(0, 0, 0);
+    }
+
+
+    
+}
+
+
+@keyframes  palavras {
+    0%,20%{
+       content: "Mim &  Minhas Habilidades";
+    }
+    21%,40%{
+        content: "Mim & Minhas Habilidades";
+     }
+     41%,80%{
+        content: " Mim & Minhas Habilidades";
+     }
+     81%,100%{
+        content: "Mim & Minhas Habilidades";
+     }
+}
+
+
+.redes{
+    opacity: 0.8;
+    top: 670px;
+    width: 100px;
+    position: absolute;
+    display: inline-flex;
+    left: 100px;
+    word-spacing: 100px;
+}
+a img{
+    width: 70px;
+}
+
+.word{
+    left: 580px;
+    z-index: 1;
+    top: 150px;
+    position: absolute;
+
+}
+.eu{
+    z-index: 1;
+    position: absolute;
+    right:  2px;
+    top: 124px;
+
+}
+.eu img{
+ 
+    width: 350px;
+}
+.menu{
+    top: 10px;
+   position: absolute;
+   right: 160px;
+   word-spacing: 30px;
+}
+
+a{   
+    opacity: 100%;
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: sans-serif;
+    
+}
+ a:hover{
+    color: #3D58FF;
+    transition: 0.4s;
+ }
+
+.graft{
+    
+    height: 200px;
+    width: 350px;
+    position: absolute;
+    right: 0px;
+    top: 415px;
+    filter: blur(9.1rem);
+    border-radius: 100%;
+    background: linear-gradient(109deg, #3D58FF 15%, #3D58FF 50%, #3D58FF 85%);
+    z-index: 0;
+    animation: pisca 10s infinite;
+}
+.graft3{
+    z-index: 4;
+    height: 45px;
+    width: 359px;
+    position: absolute;
+    right: 0px;
+    top: 730px;
+    filter: blur(1rem);
+    border-radius: 100px;
+    background: linear-gradient(109deg, #000000 15%, #000000 50%, #000000 85%);
+}
+.graft2{
+    z-index: 5;
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    left: -100px;
+    top: -150px;
+    filter: blur(9.1rem);
+    border-radius: 100%;
+    background: linear-gradient(109deg, #3D58FF 15%, #3D58FF 50%, #3D58FF 85%);
+    z-index: 0;
+    animation: piscad 10s infinite;
+}
+@keyframes pisca {
+    20%{
+        filter: blur(2.1rem);
+    }
+    40%{ 
+        
+        filter: blur(9.1rem);
+    
+    }
+}
+@keyframes piscad {
+    20%{
+        filter: blur(7.1rem);
+    }
+    40%{ 
+        
+        filter: blur(9.1rem);
+    
+    }
+}
+.nucleo{
+    position: absolute;
+    top: 20px;
+    left: 500px;
+   animation: gira  60s infinite ;
+}
+
+
+@keyframes  gira {
+
+    10%{
+        transform: rotate(360deg);
+    }
+
+
+
+ }
+
+ .nucleoo{
+    position: absolute;
+    top: 500px;
+    left: 200px;
+   animation: girar  80s infinite ;
+}
+
+@keyframes  girar {
+
+    10%{
+        transform: rotate(360deg);
+    }
+
+
+
+ }
+ h1{
+   
+     font-size: 45px;
+        top: 1100px;
+        position: absolute;
+        color: #3D58FF;
+        left: 600px;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+ }
+
+h2{
+    font-size: 45px;
+    top: 1800px;
+    position: absolute;
+    color: #3D58FF;
+    left: 600px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+ .protc img{
+  
+ border-radius: 20px;
+  z-index: 1;
+   width: 400px;
+   opacity: 0.4;
+
+ }
+ .protc{
+    display: inline-table;
+    position: absolute;
+   top: 1250px;
+   left: 90px;
+ }
+ .protc img:hover{
+    width: 450px;
+    opacity: 1;
+    transition: 0.4s;
+ }
+.icones{
+    left: 20px;
+    display: grid;
+    position: absolute;
+    top: 2000px;
+}
+.icones img {
+  width: 100px;
+}
+
+.porcentagem{
+    display: grid;
+    position: absolute;
+    top: 2030px;
+    left: 150px;
+   border-radius: 20px;
+   background-color: #2b2b2b;
+    height: 20px;
+    width: 500px;
+}
+.dois {
+    display: grid;
+    position: absolute;
+    top: 100px;
+    left: 5px;
+    border-radius: 20px;
+    background-color: #2b2b2b;
+    height: 20px;
+    width: 500px;
+   
+}
+.tres {
+    display: grid;
+    position: absolute;
+    top: 200px;
+    left: 5px;
+    border-radius: 20px;
+    background-color: #2b2b2b;
+    height: 20px;
+    width: 500px;
+}
+.quadro {
+    display: grid;
+    position: absolute;
+    top: 300px;
+    left: 5px;
+    border-radius: 20px;
+    background-color: #2b2b2b;
+    height: 20px;
+    width: 500px;
+}
+.cinco {
+    display: grid;
+    position: absolute;
+    top: 400px;
+    left: 5px;
+    border-radius: 20px;
+    background-color: #2b2b2b;
+    height: 20px;
+    width: 500px;
+}
+
+
+
+
+
+
+.porcentagemm{
+    display: grid;
+    position: absolute;
+    top: 2030px;
+    left: 150px;
+   border-radius: 20px;
+    background-color:  #3D58FF;
+    height: 20px;
+    width: 490px;
+}
+.doiss {
+    display: grid;
+    position: absolute;
+    top: 100px;
+    left: 5px;
+    border-radius: 20px;
+    background-color:  #3D58FF;
+    height: 20px;
+    width: 490px;
+
+}
+.tress {
+    display: grid;
+    position: absolute;
+    top: 200px;
+    left: 5px;
+    border-radius: 20px;
+    background-color:  #3D58FF;
+    height: 20px;
+    width: 340px;
+}
+.quadroo {
+    display: grid;
+    position: absolute;
+    top: 300px;
+    left: 5px;
+    border-radius: 20px;
+    background-color:  #3D58FF;
+    height: 20px;
+    width: 450px;
+}
+.cincoo {
+    display: grid;
+    position: absolute;
+    top: 400px;
+    left: 5px;
+    border-radius: 20px;
+    background-color:  #3D58FF;
+    height: 20px;
+    width: 150px;
+}
+.port1{
+   
+    display: grid;
+    position: absolute;
+    top: 2015px;
+    left: 660px;
+}
+.port2{
+    display: grid;
+    position: absolute;
+    top: 2115px;
+    left: 660px;
+}
+.port3{
+    display: grid;
+    position: absolute;
+    top: 2215px;
+    left: 660px;
+}
+.port4{
+    display: grid;
+    position: absolute;
+    top: 2315px;
+    left: 660px;
+}
+.port5{
+    display: grid;
+    position: absolute;
+    top: 2415px;
+    left: 660px;
+}
+
+
+h3{
+    font-size: 45px;
+    top: 2700px;
+    position: absolute;
+    color: #3D58FF;
+    left: 600px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h6{
+    font-variant-alternates: normal;
+    font-kerning: none;
+    font-style: italic;
+    color: #ffffff93;
+    font-family: sans-serif;
+    font-size: 20px;
+    top: 2840px;
+    position: absolute;
+    left: 50px;
+}
+e{
+    color: #3D58FF;
+}
+.gt{
+    width: 500px;
+    top: 2050px;
+    position: absolute;
+    color: #3D58FF;
+    left: 800px;
+}
+.gtr{
+    width: 500px;
+    top: 2840px;
+    position: absolute;
+    color: #3D58FF;
+    left: 800px;
+}
+.ggt{
+    width: 400px;
+    top: 50px;
+    position: absolute;
+    color: #3D58FF;
+    left: 50px;
+}
+.gtrr{
+    width: 500px;
+    top: 3300px;
+    position: absolute;
+    color: #3D58FF;
+    left: 100px;
+}
+h5{
+    font-variant-alternates: normal;
+    font-kerning: none;
+    font-style: italic;
+    color: #ffffff93;
+    font-family: sans-serif;
+    font-size: 20px;
+    top: 3420px;
+    position: absolute;
+    right: 20px;
+}
+.logom{
+    top: -70px;
+    position: absolute;
+    right: 0px;
+    width: 200px;
+}
+
+.redess {
+    width: 1382px;
+    height: 138px;
+    background: blue;
+    position: absolute;
+    top: 3926px;
+    left: 1px;
+   
+}
+.redess div{
+    top: 60px;
+    position: absolute;
+    left: 560px;
+}
+
+h4 {
+    font-family: math;
+    top: -77px;
+    position: absolute;
+    font-size: 23px;
+    left: 33px;
+}
+
+
+@media (max-width: 800px){
+
+    .eu{
+        z-index: 1;
+        position: absolute;
+        right:  2px;
+        top: 124px;
+    
+    }
+    .eu img{
+     
+        width: 150px;
+    }
+
+
+    .txt-animation{
+        font-family: fantasy;
+        font-size: 20px;
+        position: absolute;
+        font-weight: 400;
+        top: 200px;
+        left: 30px;
+    }
+
+
+    .graft{
+    
+        height: 100px;
+        width: 150px;
+        position: absolute;
+        right: 0px;
+        top: 255px;
+        filter: blur(9.1rem);
+        border-radius: 100%;
+        background: linear-gradient(109deg, #3D58FF 15%, #3D58FF 50%, #3D58FF 85%);
+        z-index: 0;
+        animation: pisca 10s infinite;
+    }
+    .graft3 {
+        z-index: 4;
+        height: 45px;
+        width: 171px;
+        position: absolute;
+        right: 0px;
+        top: 377px;
+        filter: blur(1rem);
+        border-radius: 100px;
+        background: linear-gradient(109deg, #000000 15%, #000000 50%, #000000 85%);
+    }  
+    .graft2{
+        z-index: 5;
+        height: 145px;
+        width: 216px;
+        position: absolute;
+        left: -100px;
+        top: -150px;
+        filter: blur(9.1rem);
+        border-radius: 100%;
+        background: linear-gradient(109deg, #3D58FF 15%, #3D58FF 50%, #3D58FF 85%);
+        z-index: 0;
+        animation: piscad 10s infinite;
+    }
+  .word{
+    left: 151px;
+    z-index: 1;
+    top: 70px;
+    position: absolute;
+}
+.word img {
+   width: 100px;
+}
+.nucleo {
+    position: absolute;
+    top: 98px;
+    left: 10px;
+    animation: gira 60s infinite;
+}
+.nucleo img {
+    width: 50px;
+}
+.nucleoo {
+    position: absolute;
+    top: 262px;
+    left: 13px;
+    animation: girar 80s infinite;
+}
+.nucleoo img {
+   width: 70px;
+}
+.ggt {
+    width: 137px;
+    top: 103px;
+    position: absolute;
+    color: #3D58FF;
+    left: 243px;
+}
+.menu {
+    top: 20px;
+    position: absolute;
+    right: 83px;
+    word-spacing: 30px;
+}
+a {
+    opacity: 100%;
+    font-size: 13px;
+    font-weight: 800;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.logom {
+    top: -7px;
+    position: absolute;
+    right: 0px;
+    width: 77px;
+}
+.redes {
+    opacity: 0.8;
+    top: 354px;
+    width: 68px;
+    position: absolute;
+    display: inline-flex;
+    left: 52px;
+    word-spacing: 28px;
+}
+.redes img {
+    width: 30px;
+}
+h1 {
+    font-size: 35px;
+    top: 445px;
+    position: absolute;
+    color: #3D58FF;
+    left: 143px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.protc {
+    display: inline-table;
+    position: absolute;
+    top: 562px;
+    left: 15px;
+}
+.protc img {
+    border-radius: 20px;
+    z-index: 1;
+    width: 175px;
+    opacity: 0.4;
+}
+.protc img:hover{
+    width: 190px;
+    opacity: 1;
+    transition: 0.4s;
+ }
+
+ h2 {
+    font-size: 35px;
+    top: 898px;
+    position: absolute;
+    color: #3D58FF;
+    left: 130px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.icones {
+    left: 20px;
+    display: grid;
+    position: absolute;
+    top: 1000px;
+}
+.icones img {
+    width: 45px;
+}
+.porcentagem {
+    display: grid;
+    position: absolute;
+    top: 1018px;
+    left: 70px;
+    border-radius: 20px;
+    background-color: #2b2b2b;
+    height: 8px;
+    width: 150px;
+}
+.dois {
+    display: grid;
+    position: absolute;
+    top: 44px;
+    left: 1px;
+    border-radius: 20px;
+    background-color: #2b2b2b;
+    height: 8px;
+    width: 152px;
+}
+
+.tres {
+    display: grid;
+    position: absolute;
+    top: 90px;
+    left: 1px;
+    border-radius: 20px;
+    background-color: #2b2b2b;
+    height: 8px;
+    width: 152px;
+}
+.quadro{
+    display: grid;
+    position: absolute;
+    top: 130px;
+    left: 1px;
+    border-radius: 20px;
+    background-color: #2b2b2b;
+    height: 8px;
+    width: 152px; 
+}
+.cinco{
+    display: grid;
+    position: absolute;
+    top: 180px;
+    left: 1px;
+    border-radius: 20px;
+    background-color: #2b2b2b;
+    height: 8px;
+    width: 152px; 
+}
+.porcentagemm {
+    display: grid;
+    position: absolute;
+    top: 1018px;
+    left: 70px;
+    border-radius: 20px;
+    background-color: #3D58FF;
+    height: 8px;
+    width: 145px;
+}
+.doiss {
+    display: grid;
+    position: absolute;
+    top: 44px;
+    left: 1px;
+    border-radius: 20px;
+    background-color: #3D58FF;
+    height: 8px;
+    width: 147px;
+}
+
+.tress {
+    display: grid;
+    position: absolute;
+    top: 90px;
+    left: 1px;
+    border-radius: 20px;
+    background-color: #3D58FF;
+    height: 8px;
+    width: 100px;
+}
+.quadroo{
+    display: grid;
+    position: absolute;
+    top: 130px;
+    left: 1px;
+    border-radius: 20px;
+    background-color: #3D58FF;
+    height: 8px;
+    width: 137px; 
+}
+.cincoo{
+    display: grid;
+    position: absolute;
+    top: 180px;
+    left: 1px;
+    border-radius: 20px;
+    background-color: #3D58FF;
+    height: 8px;
+    width: 57px; 
+}
+.port1 {
+    font-size: 10px;
+    display: grid;
+    position: absolute;
+    top: 1006px;
+    left: 230px;
+}
+.port2 {
+    font-size: 10px;
+    display: grid;
+    position: absolute;
+    top: 1050px;
+    left: 230px;
+}
+.port3 {
+    font-size: 10px;
+    display: grid;
+    position: absolute;
+    top: 1096px;
+    left: 230px;
+}
+.port4 {
+    font-size: 10px;
+    display: grid;
+    position: absolute;
+    top: 1135px;
+    left: 230px;
+}
+.port5 {
+    font-size: 10px;
+    display: grid;
+    position: absolute;
+    top: 1186px;
+    left: 230px;
+}
+.gt{
+    width: 0px;
+    top: 1110px;
+    position: absolute;
+    left: 29px;
+
+}
+
+h3 {
+    font-size: 35px;
+    top: 1243px;
+    position: absolute;
+    color: #3D58FF;
+    left: 127px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h6 {
+    font-variant-alternates: normal;
+    font-kerning: none;
+    font-style: italic;
+    color: #ffffff93;
+    font-family: sans-serif;
+    font-size: 13px;
+    top: 1300px;
+    position: absolute;
+    left: 16px;
+}
+.gtr {
+    width: 288px;
+    top: 1543px;
+    position: absolute;
+    color: #3D58FF;
+    left: 58px;
+}
+
+h5 {
+    font-variant-alternates: normal;
+    font-kerning: none;
+    font-style: italic;
+    color: #ffffff93;
+    font-family: sans-serif;
+    font-size: 15px;
+    top: 1720px;
+    position: absolute;
+    left: 15px;
+}
+.gtrr {
+    width: 180px;
+    top: 2054px;
+    position: absolute;
+    color: #3D58FF;
+    left: 120px;
+}
+
+.redess {
+    width: 387px;
+    height: 138px;
+    background: blue;
+    position: absolute;
+    top: 2372px;
+    left: 1px;
+   
+}
+.redess div{
+    top: 60px;
+    position: absolute;
+    left: 95px;
+}
+
+h4 {
+    font-family: math;
+    top: -77px;
+    position: absolute;
+    font-size: 23px;
+    left: 33px;
+}
+}
